@@ -91,3 +91,9 @@
 [submodule ".vim/unbundle/programming/TagHighlight"]
 	path = .vim/unbundle/programming/TagHighlight
 	url = git://github.com/magic-dot-files/TagHighlight.git
+[submodule ".vim/ftbundle/man/AnsiEsc.vim"]
+	path = .vim/ftbundle/man/AnsiEsc.vim
+	url = https://github.com/vim-scripts/AnsiEsc.vim.git
+[submodule ".vim/ftbundle/man/ManPageView"]
+	path = .vim/ftbundle/man/ManPageView
+	url = git://github.com/magic-dot-files/ManPageView.git
