@@ -457,21 +457,19 @@
         " SuperTab like snippets behavior.
         "imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
 
-        " <CR>: close popup
-        " <s-CR>: close popup and save indent.
-        inoremap <expr><CR> pumvisible() ? neocomplcache#close_popup() : "\<CR>"
-        inoremap <expr><s-CR> pumvisible() ? neocomplcache#close_popup() "\<CR>" : "\<CR>"
+        " Recommended key-mappings.
+        " <CR>: close popup and save indent.
+        inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
         " <TAB>: completion.
-        inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-
+        inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
         " <C-h>, <BS>: close popup and delete backword char.
         inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
         inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-        inoremap <expr><C-y> neocomplcache#close_popup()
-        inoremap <expr><C-e> neocomplcache#cancel_popup()
+        inoremap <expr><C-y>  neocomplcache#close_popup()
+        inoremap <expr><C-e>  neocomplcache#cancel_popup()
 
         " AutoComplPop like behavior.
-        "let g:neocomplcache_enable_auto_select = 0
+        let g:neocomplcache_enable_auto_select = 0
 
         " Shell like behavior(not recommended).
         "set completeopt+=longest
