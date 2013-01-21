@@ -88,3 +88,6 @@
 [submodule ".vim/unbundle/programming/TagHighlight"]
 	path = .vim/unbundle/programming/TagHighlight
 	url = git://github.com/magic-dot-files/TagHighlight.git
+[submodule ".vim/unbundle/general/restore_view.vim"]
+	path = .vim/unbundle/general/restore_view.vim
+	url = git://github.com/vim-scripts/restore_view.vim.git
